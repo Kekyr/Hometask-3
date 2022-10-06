@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+namespace Game
+{
 public class PointPatroller : MonoBehaviour
 {
     [SerializeField] private Transform[] _patrollingPoints;
@@ -40,4 +42,5 @@ public class PointPatroller : MonoBehaviour
     {
         transform.position = new Vector3(_patrollingPoints[pointIndex].position.x, transform.position.y, _patrollingPoints[pointIndex].position.z);
     }
+}
 }

@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+namespace Game
+{
 public class Key : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
@@ -10,4 +12,5 @@ public class Key : MonoBehaviour
             Destroy(gameObject);
         }
     }
+}
 }

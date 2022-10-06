@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+namespace Game
+{
 [RequireComponent(typeof(MeshRenderer))]
 public class Exit : MonoBehaviour
 {
@@ -26,4 +28,5 @@ public class Exit : MonoBehaviour
         IsOpen = false;
         _renderer.sharedMaterial = _closedMaterial;
     }
+}
 }

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace Game
+{
 public class Movement : MonoBehaviour
 {
     [SerializeField] private LayerMask _obstacleMask;
@@ -32,4 +34,5 @@ public class Movement : MonoBehaviour
         transform.forward = direction;
         transform.Translate(direction * _step, Space.World);
     }
+}
 }

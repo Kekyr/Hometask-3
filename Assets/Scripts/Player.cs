@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+namespace Game
+{
 [RequireComponent(typeof(Movement))]
 public class Player : MonoBehaviour
 {
@@ -37,4 +39,5 @@ public class Player : MonoBehaviour
     {
         HasKey = true;
     }
+}
 }

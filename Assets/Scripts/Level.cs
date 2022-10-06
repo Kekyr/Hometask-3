@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class Game : MonoBehaviour
+namespace Game
+{
+public class Level : MonoBehaviour
 {
     [Header("Timer")]
     [SerializeField] private bool _timerIsOn;
@@ -88,4 +90,5 @@ public class Game : MonoBehaviour
         _player.Disable();
         Debug.LogError("Lose");
     }
+}
 }
