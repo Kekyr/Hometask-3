@@ -38,6 +38,9 @@ namespace Game
 
         private void Update()
         {
+            if (Input.GetKeyDown(KeyCode.Space))
+                RestartLevel();
+            
             if (_gameIsEnded)
                 return;
 
@@ -130,7 +133,7 @@ namespace Game
         
         public void RestartGame()
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("Level 1");
         }
     }
 }
